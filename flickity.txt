@@ -4,7 +4,7 @@ var flkty = new Flickity( carousel, {
   percentPosition: false,
 draggable: true,
 wrapAround: true,
-autoPlay: true,
+autoPlay: 1500,
 initialIndex: 2,
 accessibility: true,
 
