@@ -1,4 +1,4 @@
-var carousel = document.querySelectorAll('.main-carousel');
+var carousel = document.querySelector('.main-carousel');
 var flkty = new Flickity( carousel, {
   imagesLoaded: true,
   percentPosition: false,
