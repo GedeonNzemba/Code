@@ -1,7 +1,7 @@
 var carousel = document.querySelectorAll(".main-carousel");
     for (let index = 0; index < carousel.length; index++) {
 
-      var flkty = new Flickity(carousel, {
+      var flkty = new Flickity(carousel[index], {
         imagesLoaded: true,
         percentPosition: false,
         draggable: true,
@@ -10,7 +10,7 @@ var carousel = document.querySelectorAll(".main-carousel");
         initialIndex: 2,
         accessibility: true,
       });
-      var imgs = carousel.querySelectorAll(".carousel-cell img");
+      var imgs = carousel[index].querySelectorAll(".carousel-cell img");
       // get transform property
       var docStyle = document.documentElement.style;
       var transformProp =
